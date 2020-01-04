@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="bs/css/bootstrap.min.css">
+	<script type="text/javascript" src="bs/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="script.js">
+	</script>
+	<style type="text/css">
+		html, body{
+			height:100%;
+		}
+		.controls{
+		}
+		.game-box{
+			box-shadow: rgba(0, 0, 0, 0.48) 1px 14px 23px 0px;
+			background: purple;
+			padding: 10px;
+			color: white;
+			height:490px;
+		}
+		.button{
+			padding: 10px;
+			border-radius: 5px;
+			width:50%;
+			margin-top: 5px;
+			position:inherit;
+			background: #b18eb1;
+			opacity: 1px;
+		}
+		.button:hover{
+			border:1px ridge black;
+		}
+		.hide{
+			display: none;
+		}
+		#start-btn{
+		}
+		.correct{
+			background:green;
+		}
+		.wrong{
+			background: red;
+		}
+		#question{
+			font-size: 20px;
+			font-weight: 10px;
+		}
+		.score{
+			font-size: 30px;
+		}
+		.game-over h3{
+			color: red;
+			position: relative;
+			top:82px;
+		}
+		
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="row" style="margin-top: 10px;">
+			<div class="col-sm-1"></div>
+				<div class="col-sm-10 game-box">
+					<div class="row">
+						<div class="col-sm-8">
+							<div id="que-container" class="hide">
+								<div id="question" style="padding: 10px;">
+									<h4>Human Interaction ?</h4>
+								</div>
+								<div id="ans-button" class="grid-btn">
+								</div>
+								<div class="controls" id="controls">
+									
+								</div><br>
+
+								<button type="button" id="next-btn" class="btn btn-primary next-btn">Next</button>
+							</div>
+								<button type="button" id="start-btn" class="btn btn-outline-primary btn-lg start-btn">Play</button>
+						</div>
+						<div class="col-sm-4" id="notifyBox">
+							<div class="score hide" id="score"></div>
+							<div class="game-over hide" id="gameOver">
+								<h3>Wrong Answer <br> Learn and try again.</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-1"></div>
+		</div>
+	</div>
+</body>
+</html>
